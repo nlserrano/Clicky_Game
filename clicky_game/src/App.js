@@ -1,9 +1,10 @@
 import React, {Component} from "react";
 import Header from "./components/Header";
 import BodyContent from "./components/BodyContent";
-import CharacterCard from "./components/CharacterCard";
+import CharacterCard from "./components/ChracterCard/CharacterCard";
 import character from "./cards.json";
 import Footer from "./components/Footer";
+import "./App.css";
 
 // function App () {
 //     return (
@@ -75,7 +76,7 @@ class App extends Component {
           <Header 
             score={this.state.score}
           />
-          <BodyContent />
+          {/* <BodyContent /> */}
           <div className="wrapper">
             {this.state.character.map(character => (
               <CharacterCard
