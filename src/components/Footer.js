@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer () {
     return (
-        <h5>Copyright 2019 © Nathan Serrano</h5>
+        <h5 className="center-align">Copyright 2019 © Nathan Serrano</h5>
     );
 }
 

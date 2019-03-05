@@ -1,27 +1,29 @@
 import React from "react";
 
 const jumbotronStyle = {
-    paddingBottom: '100px',
+    paddingTop: '10px',
+    paddingBottom: '50px',
+    marginBottom: '0px',
     boxShadow: "0px 0px 0px 0px rgba(0,0,0,0)"
 }
+
+const headerStyles = {
+}
+
 
 function Header (props) {
     return (
     <div>
-        <nav>
-            <div className="nav-wrapper">
-                {/* <a href="" className="brand-logo">Clicky Game!</a> */}
-                <ul id="nav-mobile" className="right hide-on-med-and-down">
-                    <li>Clicky Game! (MGS Edition)</li>
-                    <li>Score: {props.score}</li>
-                </ul>
-            </div>
-        </nav>
+        <div className="navbar-fixed">
+            <nav>
+                <header style={headerStyles} className="center">SCORE: {props.score}/12</header>
+            </nav>
+        </div>
 
         <div className="card-panel grey lighten-2 center" style={jumbotronStyle}>
             <div className="container">
-                <h1>Clicky Game!</h1>
-                <h5>Click on an image to earn points, but don't click on any more than once! Or else...</h5>
+                <h1>Clicky Game! (MGS Edition)</h1>
+                <h5>Click on an image to earn points, but don't click on any more than once!</h5>
             </div>
         </div>
     </div>

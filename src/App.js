@@ -77,7 +77,7 @@ class App extends Component {
             score={this.state.score}
           />
           {/* <BodyContent /> */}
-          <div className="wrapper">
+          <div className="wrapperDiv">
             {this.state.character.map(character => (
               <CharacterCard
                 imageClick={this.imageClick}
