@@ -1,26 +1,11 @@
 import React, {Component} from "react";
 import Header from "./components/Header";
-import jumbotron from "./components/Jumbotron";
+import Jumbotron from "./components/Jumbotron/Jumbotron";
 import CharacterCard from "./components/ChracterCard/CharacterCard";
 import character from "./cards.json";
 import Footer from "./components/Footer";
 import "./App.css";
-import Jumbotron from "./components/Jumbotron";
 
-// import background from "./background_img/background5.jpg";
-
-// var sectionStyle = {
-//   backgroundImage: "url(" + background + ")"
-// };
-
-// function App () {
-//     return (
-//         <div>
-//             <Header />
-//             <BodyContent />
-//         </div>
-//     );
-// }
 
 //sets state to 0 or empty
 class App extends Component {
@@ -79,7 +64,7 @@ class App extends Component {
   //the order of components to be rendered: navbar, jumbotron, friendcard, footer 
     render() {
       return (
-        <div class="backgroundImg">
+        <div>
           <Header 
             score={this.state.score}
           />

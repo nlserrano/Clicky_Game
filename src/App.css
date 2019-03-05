@@ -1,3 +1,10 @@
+body {
+    /* background: linear-gradient(black, rgb(179, 132, 132)); */
+    background: url("./background_img/background5.jpg");
+    background-position: 50% -20%;
+}
+
+
 .wrapperDiv {
     height: 100%;
     display: flex;
@@ -5,8 +12,4 @@
     padding: 25px 80px 50px;
     justify-content: space-around;
     align-content: flex-start;
-}
-
-.backgroundImg {
-    /* background-image: url("./background_img/"); */
 }

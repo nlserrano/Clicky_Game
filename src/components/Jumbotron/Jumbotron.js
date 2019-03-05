@@ -1,4 +1,5 @@
 import React from "react";
+import "./Jumbotron.css";
 
 const jumbotronStyle = {
     paddingTop: '40px',
