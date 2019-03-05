@@ -30,7 +30,7 @@ class App extends Component {
           clickedCharacter: [],
           score: 0
         });
-          alert("You lose. Play again?");
+          alert("You lose. Try again?");
   
   //if you click on an available fish, your score is increased and cards reordered
       } else {
@@ -47,7 +47,7 @@ class App extends Component {
   //if you get all 12 fish corrent you get a congrats message and the game resets        
           () => {
             if (this.state.score === 12) {
-              alert("Yay! You Win!");
+              alert("You Win!");
               this.setState({
                 character: this.state.character.sort(function(a, b) {
                   return 0.5 - Math.random();
