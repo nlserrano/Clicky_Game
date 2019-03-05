@@ -6,5 +6,5 @@ Created using React, this is a memory game featuring characters from the video g
 
 ## How to Play:
 - Try to select all 12 images only once to win.
-- Be careful, images will shuffle around everytime an image is clicked!
+- Be careful, images will try to be sneaky by shuffling around everytime an image is clicked!
 - If you click on a previously clicked image, you lose and will have to start all over!
