@@ -1,8 +1,13 @@
 import React from "react";
 
+const footerStyle = {
+    padding: "20px 0px 20px 0px",
+    fontSize: 14,
+}
+
 function Footer () {
     return (
-        <h5 className="center-align">Copyright 2019 © Nathan Serrano</h5>
+        <p style={footerStyle} className="center-align section">Copyright 2019 © Nathan Serrano</p>
     );
 }
 

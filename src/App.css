@@ -6,3 +6,7 @@
     justify-content: space-around;
     align-content: flex-start;
 }
+
+.backgroundImg {
+    /* background-image: url("./background_img/"); */
+}

@@ -1,10 +1,17 @@
 import React, {Component} from "react";
 import Header from "./components/Header";
-import BodyContent from "./components/BodyContent";
+import jumbotron from "./components/Jumbotron";
 import CharacterCard from "./components/ChracterCard/CharacterCard";
 import character from "./cards.json";
 import Footer from "./components/Footer";
 import "./App.css";
+import Jumbotron from "./components/Jumbotron";
+
+// import background from "./background_img/background5.jpg";
+
+// var sectionStyle = {
+//   backgroundImage: "url(" + background + ")"
+// };
 
 // function App () {
 //     return (
@@ -72,11 +79,11 @@ class App extends Component {
   //the order of components to be rendered: navbar, jumbotron, friendcard, footer 
     render() {
       return (
-        <div>
+        <div class="backgroundImg">
           <Header 
             score={this.state.score}
           />
-          {/* <BodyContent /> */}
+          <Jumbotron />
           <div className="wrapperDiv">
             {this.state.character.map(character => (
               <CharacterCard
